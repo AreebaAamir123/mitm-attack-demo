@@ -9,7 +9,7 @@ This project is a hands-on demonstration of a Man-in-the-Middle (MITM) attack, c
 **This was performed entirely in a private, isolated environment against a site that is deliberately built for security testing practice — not against any real or third-party system!**
 
 ## Demo Video
-The full walkthrough (VM setup → traffic interception → captured credentials) is available here: **[link]**
+The full walkthrough (VM setup → traffic interception → captured credentials) is available here: **[https://drive.google.com/file/d/1pJ_ey3yAKniEhplLTQjMdMtMV7ni7zQ7/view?usp=sharing]**
 *(Video hosted externally due to file size; not included directly in this repository.)*
 
 ## Lab Setup
