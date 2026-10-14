@@ -2,9 +2,11 @@
 
 **Coursework Project — Information Security**
 Instructor: Dr. Subhash Sagar
+<img width="1136" height="507" alt="image" src="https://github.com/user-attachments/assets/0bbc2839-d2c1-4a71-ba03-d33d5392958d" />
 
 ## Overview
 This project is a hands-on demonstration of a Man-in-the-Middle (MITM) attack, carried out in an isolated virtual lab. The goal was to see, in practice, how unencrypted (HTTP) traffic can expose sensitive information such as login credentials to someone on the same network, and to understand why defenses like HTTPS and network segmentation matter.
+<img width="719" height="493" alt="image" src="https://github.com/user-attachments/assets/578eb083-89f7-4b04-8332-84f85c712bfa" />
 
 **This was performed entirely in a private, isolated environment against a site that is deliberately built for security testing practice — not against any real or third-party system!**
 
@@ -31,8 +33,11 @@ The task was carried out in two parts, using two different tools to achieve the 
 4. Opened the packet and showed the submitted username and password visible in **plaintext**, since the site used HTTP instead of HTTPS.
 
 **Part 2: Ettercap (active interception)**
+<img width="792" height="394" alt="image" src="https://github.com/user-attachments/assets/cfe5c4ed-c35b-491f-9768-53c45323e730" />
+
 1. Used **Ettercap** on the same Kali Linux VM to actively intercept traffic between the victim machine and the network.
 2. Repeated the login submission and confirmed that the credentials were exposed the same way, demonstrating that the traffic could be captured even without direct access to the victim's own machine — as long as the connection was on the same network.
+<img width="989" height="481" alt="image" src="https://github.com/user-attachments/assets/77cdfb3f-41e0-4701-816e-4a6658a9a5b9" />
 
 ## Key Finding
 Both approaches led to the same result: because the login form was sent over plain HTTP, the credentials were readable in plaintext. Wireshark showed this could be seen by anyone already positioned to observe network traffic, while Ettercap showed that an attacker could actively place themselves on the network to intercept traffic that wasn't otherwise visible to them. This reinforces that the real vulnerability is the **lack of encryption**, not just one specific tool or technique.
